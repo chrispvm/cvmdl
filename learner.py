@@ -3,6 +3,8 @@ import os
 import pickle
 import random
 from typing import List
+from dataclasses import dataclass
+from datetime import datetime
 
 # import os
 cwd = os.getcwd()
@@ -15,8 +17,6 @@ from torch import nn
 
 from . import utils
 from .hooks import Hooks
-from .dataclasses import dataclass
-from .datetime import datetime
 
 class EventException(Exception):
     pass

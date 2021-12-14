@@ -12,8 +12,9 @@ export -f addimport
 
 ls | grep -x "[^_][^ ]*.py" | sed "s/.py//" | parallel -j1 addimport {} 
 
-conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch -y
-pip install gym -y
-pip install pyhash -y 
+conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch 
+pip install gym 
 
-
+pip install dash  
+pip install jupyter-dash 
+pip install pandas 

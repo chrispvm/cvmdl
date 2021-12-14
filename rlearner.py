@@ -1,7 +1,7 @@
 
 from gym import wrappers
 
-
+from .learner import Learner
 
 
 class ReinforcementLearner(Learner):
